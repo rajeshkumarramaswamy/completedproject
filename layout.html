@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <script></script>
+    <style>
+	#dropdown1 {
+		display: inline-block;
+		float: left;
+		height: 30%;
+	}
+	#dropdown2 {
+		display: inline-block;
+		float: left;
+		height: 30%;
+		padding-left: 60px;
+	}
+	#checkbox1 {
+		height: 50%;
+		display: inline;
+		padding-top: 70px;
+	}
+	#checkbox2 {
+		height: 50%;
+		display: inline;
+	}
+    </style>	
+    </style>	
+</head>
+
+<body>
+	<div id="dropdown1"><p><strong>Product Lines</strong></p>
+			<select><option>--Select--</option></select></div>
+	<div id="dropdown2"><p><strong>Product</strong></p>
+			<select><option>--Select--</option></select></div>
+	<div id="checkbox1">Order<input type="checkbox" value="From" /></div>
+	<div id="date2"><input type="date" label="From"></div>
+	<div id="checkbox2">Payment<input type="checkbox" value="Payment" /></div>
+	<div id="date2"><input type="date" label="To"></div>
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script type="text/javascript">
+		$('#checkbox1').click(function() {
+			$('#date1').toggle(this.checked);
+		});
+	</script>
+</body>
+</html>
